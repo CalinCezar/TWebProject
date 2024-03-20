@@ -2,7 +2,7 @@
     ViewBag.Title = "Login";
     Layout = "~/Views/Login/_LayoutLogin.cshtml";
 }
-
+@using System.Web.Optimization;
 <div class="modal-wrap">
     <div class="modal-bodies">
         <div class="modal-body modal-body-step-1 is-showing">
@@ -23,8 +23,7 @@
                 <div class="text-center">
                     <input type="submit" value="Login" class="button" style="width:200px; ">
                 </div>
-
-                <script src="assets/js/login.js"></script>
+                @Scripts.Render("~/bundles/login/js")
                 <hr>
 
                 <div class="text-center"> Don't have an account? <a href="/register" class="btn-link">Sign up</a></div>
