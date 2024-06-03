@@ -229,6 +229,7 @@
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\ProfileController.cs" />
     <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Controllers\ResetPasswordController.cs" />
     <Compile Include="Global.asax.cs">
@@ -277,6 +278,7 @@
     <Content Include="Views\Register\_LayoutRegister.cshtml" />
     <Content Include="Views\Shared\_Header.cshtml" />
     <Content Include="Views\ResetPassword\Index.cshtml" />
+    <Content Include="Views\Profile\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
