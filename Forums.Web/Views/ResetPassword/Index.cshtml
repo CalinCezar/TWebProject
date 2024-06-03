@@ -35,11 +35,11 @@
     </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
+    <script>
     $(document).ready(function() {
         $('#sendLinkButton').click(function(e) {
             e.preventDefault();
-
+            
             var email = $('#Email').val();
             if (email)
             {
@@ -54,7 +54,7 @@
                     success: function(response) {
                         if (response.success) {
                             alert('Email sent successfully!');
-
+                            
                         } else {
                             alert('Email is not registered! ');
                         }
@@ -77,9 +77,9 @@
             setTimeout(function () {
                 button.prop("value", "Try again?");
                 button.prop('disabled', false);
-            }, 10000);
+            }, 10000); 
         }
     });
-</script>
+    </script>
 <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
 

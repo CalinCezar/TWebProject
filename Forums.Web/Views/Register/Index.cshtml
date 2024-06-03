@@ -51,10 +51,7 @@
                         <br>
                         Have already an account? <a href="/login/index" class="btn-link">Login</a>
                         <hr>
-                        <div class="col-md-12 sign-in28912">
-                            <img src="~/assets/image/google_icon.png" alt="Google" class="google-icon">
-                            <a href="/" class="btn btn-danger btn-sign-google">Sign in with Google</a>
-                        </div>
+                       
                     </div>
                 </div>
             }
@@ -63,7 +60,7 @@
             <script>
     $(document).ready(function() {
         $('#sendCodeButton').click(function () {
-
+            
             var email = $('#Email').val();
             if (email) {
                 disableButtonTemporarily();
@@ -75,10 +72,10 @@
                         __RequestVerificationToken: $('input[name="__RequestVerificationToken"]').val()
                     },
                     success: function (response) {
-
+                        
                         if (response.success) {
                             alert('Code sent successfully!')
-
+                            
                         } else {
                             alert('Error sending code.');
                         }
@@ -93,14 +90,14 @@
         });
         function disableButtonTemporarily() {
             var button = $('#sendCodeButton');
-
+            
             button.prop('disabled', true);
             button.prop("value", "Wait...");
 
             setTimeout(function () {
                 button.prop("value", "Try again?");
                 button.prop('disabled', false);
-            }, 15000);
+            }, 15000); 
         }
     });
             </script>

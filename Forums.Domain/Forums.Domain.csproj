@@ -61,7 +61,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Responses\GeneralResp.cs" />
+    <Compile Include="Entities\User\Session.cs" />
+    <Compile Include="Entities\User\UDbTable.cs" />
+    <Compile Include="Entities\User\ULoginData.cs" />
+    <Compile Include="Entities\User\ULoginResp.cs" />
+    <Compile Include="Entities\User\URegisterData.cs" />
+    <Compile Include="Entities\User\UserMinimal.cs" />
+    <Compile Include="Enum\UserRole.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Forums.Helpers\Forums.Helpers.csproj">
+      <Project>{80d3a575-998b-4e22-9ede-e669489c3a5a}</Project>
+      <Name>Forums.Helpers</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

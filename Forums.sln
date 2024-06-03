@@ -4,6 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forums.Web", "Forums.Web\Forums.Web.csproj", "{676146E7-C1F9-45B5-BCE1-7DDA18D952C2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0E79F78D-7457-4928-AAD1-B091805AD0BE} = {0E79F78D-7457-4928-AAD1-B091805AD0BE}
+		{5308A1F6-35B2-4FD2-898C-EA14F94B4EBF} = {5308A1F6-35B2-4FD2-898C-EA14F94B4EBF}
+		{BB67129D-42B3-4D7E-866F-E513A0D6CD62} = {BB67129D-42B3-4D7E-866F-E513A0D6CD62}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forums.BusinessLogic", "Forums.BusinessLogic\Forums.BusinessLogic.csproj", "{0E79F78D-7457-4928-AAD1-B091805AD0BE}"
 EndProject
@@ -38,6 +43,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {B17A5BDA-CD25-4C2B-B5CA-26C8ACDFE7D2}
+		SolutionGuid = {5AF20B24-0C18-4D26-A8E2-FBBE15C8B6DB}
 	EndGlobalSection
 EndGlobal
