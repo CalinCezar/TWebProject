@@ -2,7 +2,7 @@
     ViewBag.Title = "Register";
     Layout = "~/Views/Register/_LayoutRegister.cshtml";
 }
-
+@using System.Web.Optimization;
 <div class="modal-wrap">
     <div class="modal-bodies">
         <div class="modal-body modal-body-step-1 is-showing">
@@ -42,7 +42,7 @@
 
                             </div>
                         </div>
-                        <script src="assets/js/auth.js"></script>
+                        @Scripts.Render("~/bundles/auth/js")
                         <br>
                         Have already an account? <a href="/login" class="btn-link">Login</a>
 
